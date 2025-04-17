@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Noto Sans JP", serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header, .footer, menu, .contact1, .action-buttons, .contact-phone, .sec-one {
+  margin: 0 auto;
+}
+
+.action-buttons {
+  position: fixed;
+  right: 0;
+  top: 20rem;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.action-buttons .container .content a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 0.8rem;
+  padding: 1.8rem 1.2rem;
+  border-radius: 1.6rem 0 0 1.6rem;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+.action-buttons .container .content a img {
+  width: 2.4rem;
+  height: 2.4rem;
+  aspect-ratio: 1;
+}
+.action-buttons .container .content a .btn-img {
+  display: none;
+}
+.action-buttons .container .content a span {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  letter-spacing: 0.042rem;
+  font-weight: 600;
+}
+.action-buttons .container .content a small {
+  color: black;
+  padding: 0 0.8rem;
+  font-weight: 700;
+  display: inline-block;
+  background: #ffe344;
+  border-radius: 0.8rem;
+}
+.action-buttons .container .content .button-contact {
+  background-color: #F67600;
+}
+.action-buttons .container .content .button-red {
+  background-color: #DD1D1D;
+}
+
+.header {
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  padding: 3.2rem 0;
+  position: sticky;
+  background-color: white;
+  gap: 10px;
+}
+.header .container .content {
+  width: 100%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: grid;
+  row-gap: 3rem;
+}
+.header .container .content .above {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .content .above .logo img {
+  width: 100%;
+}
+.header .container .content .above .btn-icon {
+  display: none;
+}
+.header .container .content .above .btn-icon .phone-icon {
+  cursor: pointer;
+}
+.header .container .content .above .btn-icon .menu-icon {
+  cursor: pointer;
+  z-index: 1000;
+}
+.header .container .content .above .contact {
+  width: 100%;
+  max-width: 43.4rem;
+  display: flex;
+}
+.header .container .content .above .contact .phone {
+  max-width: 27.2rem;
+  font-size: 3.6rem;
+  color: #F67600;
+  font-weight: bold;
+}
+.header .container .content .above .contact .time {
+  max-width: 15rem;
+  font-size: 1.1rem;
+  padding: 0.7rem 0.3rem;
+  transform: translateY(0.5rem);
+  color: #000000;
+}
+.header .container .content .above .contact .phone:hover, .header .container .content .above .contact .time:hover {
+  opacity: 70%;
+  transition: all 0.5s;
+}
+.header .container .content .above .contact img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.header .container .content .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+.header .container .content .nav ul {
+  width: 100%;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.header .container .content .nav li {
+  margin: auto;
+}
+.header .container .content .nav li:hover {
+  opacity: 75%;
+  transition: all 0.5s;
+}
+.header .container .content .nav a {
+  text-decoration: none;
+  color: black;
+  padding: 12px;
+}
+.header .container .content .contact-btn {
+  display: none;
+}
+
+.sec-one {
+  max-width: 1360px;
+  height: 300px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  font-weight: bold;
+  background: url(../img/AdobeStock.png);
+  background-color: skyblue;
+}
+.sec-one .container .content {
+  width: 100%;
+}
+.sec-one .container .content .reason {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+}
+.sec-one .container .content .reason h1 {
+  font-size: 48px;
+}
+.sec-one .container .content .reason br {
+  display: none;
+}
+.sec-one .container .content .reason p {
+  font-size: 24px;
+  color: #F67600;
+  font-family: "Oswald", serif;
+}
+
+.sec-two {
+  width: 100%;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+.sec-two .container .content .list {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #606060;
+}
+.sec-two .container .content ul {
+  display: flex;
+  line-height: 1;
+  gap: 0.8rem;
+  padding: 2rem 0rem;
+  list-style-type: none;
+}
+.sec-two .container .content a {
+  color: #000000;
+}
+.sec-two .container .content .item a {
+  color: #F67600;
+}
+
+.main {
+  width: 100%;
+  max-width: 144rem;
+}
+.main .sec-three {
+  margin: 2rem 0;
+}
+.main .sec-three .container .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main .sec-three .container .content .list-item {
+  max-width: 112rem;
+  display: block;
+}
+.main .sec-three .container .content .list-item .item {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.contact1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/Rectangle1.png);
+  background-size: cover;
+  padding: 7rem 0;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+.contact1 .container .content .contact-list {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.contact1 .container .content .contact-list .contact-list__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact1 .container .content .contact-list .contact-list__btn span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  border-radius: 1rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.contact1 .container .content .contact-list .contact-list__btn .no-bg {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 0;
+  font-size: 2.4rem;
+}
+.contact1 .container .content .contact-list .text-marker {
+  font-size: 4.4rem;
+  font-weight: bold;
+  color: #ffe344;
+  margin-left: 1rem;
+}
+.contact1 .container .content .contact-list .text-marker small {
+  position: relative;
+}
+.contact1 .container .content .contact-list .text-marker small::after {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffe344;
+  border-radius: 50%;
+}
+.contact1 .container .content .contact-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: #FFFFFF;
+}
+.contact1 .container .content .contact-phone:hover {
+  opacity: 60%;
+  transition: all 0.5s;
+}
+.contact1 .container .content .contact-phone .contact-phone__number {
+  font-size: 6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contact1 .container .content .contact-phone .contact-phone__text {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.2;
+  padding: 0 1rem;
+  transform: translateY(0.7rem);
+}
+.contact1 .container .content .contact-btn {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.contact1 .container .content .contact-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45.3rem;
+  height: 10.8rem;
+  font-size: 2.4rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 5rem;
+  position: relative;
+}
+.contact1 .container .content .contact-btn a img {
+  width: 4rem;
+  height: 4rem;
+}
+.contact1 .container .content .contact-btn .contact-btn__img {
+  position: absolute;
+  flex-shrink: 0;
+  right: 2rem;
+}
+.contact1 .container .content .contact-btn .contact-btn__orange {
+  background-color: #F67600;
+}
+.contact1 .container .content .contact-btn .contact-btn__orange:hover {
+  opacity: 80%;
+  transition: all 0.5s;
+}
+.contact1 .container .content .contact-btn .contact-btn__red {
+  background-color: #DD1D1D;
+}
+.contact1 .container .content .contact-btn .contact-btn__red:hover {
+  opacity: 80%;
+  transition: all 0.5s;
+}
+
+.footer {
+  width: 100%;
+  background-color: #2c2c2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6.5rem 0;
+}
+.footer .container .content {
+  display: grid;
+  row-gap: 2.5rem;
+}
+.footer .container .content .logo__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container .content .logo__footer:hover {
+  opacity: 70%;
+  transition: all 0.5s;
+}
+.footer .container .content .contact__footer {
+  color: #ffffff;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .container .content .contact__footer span {
+  display: block;
+  color: #f67600;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.footer .container .content .contact__footer span br {
+  display: none;
+}
+.footer .container .content .contact__footer .nd__footer {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer1 .bnr__footer2,
+.footer .container .content .contact__footer .nd__footer .nd__footer1 .bnr__footer1 {
+  width: 39.7rem;
+  height: 10rem;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer1 .bnr__footer2:hover,
+.footer .container .content .contact__footer .nd__footer .nd__footer1 .bnr__footer1:hover {
+  opacity: 80%;
+  transition: all 0.5s;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer1 .bnr__footer2 {
+  margin-left: 2rem;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer2 {
+  display: flex;
+  padding-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.footer .container .content .contact__footer .nd__footer .p__footer {
+  padding-right: 3.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.footer .container .content .contact__footer .nd__footer .nd__footer p {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.footer .container .content .nav__footer {
+  width: 100%;
+  max-width: 83.4rem;
+  height: 14rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  line-height: 2;
+  font-size: 1.5rem;
+}
+.footer .container .content .nav__footer .nav__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer .container .content .nav__footer .nav__list ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  margin: 0;
+}
+.footer .container .content .nav__footer .nav__list ul li:hover {
+  opacity: 70%;
+}
+.footer .container .content .nav__footer .nav__list:nth-child(1) ul,
+.footer .container .content .nav__footer .nav__list :nth-child(5) ul {
+  padding: 0;
+}
+.footer .container .content .nav__footer .nav__list:nth-child(2) ul,
+.footer .container .content .nav__footer .nav__list :nth-child(3) ul,
+.footer .container .content .nav__footer .nav__list :nth-child(4) ul {
+  padding: 0 1rem;
+}
+.footer .container .content .nav__footer .nav__list a {
+  color: white;
+  text-decoration: none;
+}
+.footer .container .content .copy {
+  color: #969696;
+  text-align: center;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=index.css.map */
