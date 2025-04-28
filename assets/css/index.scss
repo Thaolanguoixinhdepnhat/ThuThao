@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 $font-noto: "Noto Sans JP", serif;
 $font-dm: "DM Serif Text", serif;
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -2156,7 +2160,6 @@ margin: 0 auto;
     overflow-y: auto;
     display: none;
     position: fixed;
-    top: 9rem; 
     left: 0;
     background-color: white; 
       ul{

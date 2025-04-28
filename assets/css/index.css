@@ -2,6 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1273,7 +1279,6 @@ a {
     overflow-y: auto;
     display: none;
     position: fixed;
-    top: 9rem;
     left: 0;
     background-color: white;
   }
