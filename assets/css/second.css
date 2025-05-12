@@ -1,0 +1,354 @@
+.main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-bottom: 12rem;
+}
+.main .layout {
+  width: 100%;
+  max-width: 112rem;
+  margin: 0 auto;
+}
+.main .layout .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+}
+.main .layout .container .content .content-title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.main .layout .container .content .content-title .title-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+.main .layout .container .content .content-title .title-main .p {
+  color: #F67600;
+  font-weight: 700;
+  font-size: 3.2rem;
+  letter-spacing: 0.096rem;
+  text-align: center;
+}
+.main .layout .container .content .content-title .title-main .p span {
+  font-weight: 700;
+  font-size: 6.4rem;
+  letter-spacing: 0.096rem;
+}
+.main .layout .container .content .content-title .title-main .p .sp {
+  display: none;
+}
+.main .layout .container .content .content-title .title-main .underline {
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #F67600;
+}
+.main .layout .container .content .card {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.main .layout .container .content .card .group-item {
+  display: flex;
+  flex-direction: column;
+}
+.main .layout .container .content .card .group-item .group-title {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  gap: 1.6rem;
+  padding: 2rem 3.2rem;
+  background-color: #FDE3CC;
+  border-radius: 1.6rem 1.6rem 0 0;
+}
+.main .layout .container .content .card .group-item .group-title .title {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.main .layout .container .content .card .group-item .group-title .title span {
+  font-size: 3.2rem;
+  font-family: Oswald;
+  font-weight: 500;
+  text-align: center;
+  color: #F67600;
+  line-height: 1;
+}
+.main .layout .container .content .card .group-item .group-title .title p {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+}
+.main .layout .container .content .card .group-item .group-title .title .sp {
+  display: none;
+}
+.main .layout .container .content .card .group-item .group-title .icon {
+  transition: transform 0.3s ease;
+}
+.main .layout .container .content .card .group-item .group-title .icon img {
+  transition: transform 0.3s ease;
+}
+.main .layout .container .content .card .group-item .group-title.active .icon img {
+  transform: rotate(180deg);
+}
+.main .layout .container .content .card .group-item .above {
+  width: 100%;
+  padding: 4.8rem;
+  border-bottom-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
+  border-right: 0.4rem solid #FDE3CC;
+  border-bottom: 0.4rem solid #FDE3CC;
+  border-left: 0.4rem solid #FDE3CC;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.main .layout .container .content .card .group-item .above.open {
+  max-height: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  opacity: 0;
+  overflow: hidden;
+}
+.main .layout .container .content .card .group-item .above-main {
+  display: flex;
+  gap: 4rem;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .sp {
+  display: none;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left span {
+  color: #F67600;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.054rem;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .description {
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.8;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .description p {
+  font-size: 1.5rem;
+  letter-spacing: 0.048rem;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .description .sp {
+  display: none;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .button {
+  padding: 1.6rem 3.2rem 1.6rem 4rem;
+  display: flex;
+  gap: 0.8rem;
+  border: 0.2rem solid #000000;
+  border-radius: 9.9rem;
+  margin: 0 auto;
+  margin-left: 0;
+}
+.main .layout .container .content .card .group-item .above-main .left .group-left .button span {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #000000;
+  line-height: 1.5;
+  letter-spacing: 0.054rem;
+}
+.main .layout .container .content .card .group-item .above-main .right img {
+  max-width: 38rem;
+}
+.main .layout .container .content .card .group-item .above-main .right .button {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .main {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-bottom: 12rem;
+  }
+  .main .layout {
+    width: 100%;
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+  .main .layout .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main .layout .container .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .main .layout .container .content .content-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .main .layout .container .content .content-title .title-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .main .layout .container .content .content-title .title-main .p {
+    color: #F67600;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.1;
+    letter-spacing: 0.072rem;
+    text-align: center;
+  }
+  .main .layout .container .content .content-title .title-main .p span {
+    font-weight: 700;
+    font-size: 4.8rem;
+    letter-spacing: 0.0144rem;
+  }
+  .main .layout .container .content .content-title .title-main .p .sp {
+    display: inline;
+  }
+  .main .layout .container .content .content-title .title-main .underline {
+    width: 4rem;
+    height: 0.2rem;
+    background-color: #F67600;
+  }
+  .main .layout .container .content .card {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .main .layout .container .content .card .group-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .main .layout .container .content .card .group-item .group-title {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    gap: 1.6rem;
+    padding: 2rem;
+    background-color: #FDE3CC;
+    border-radius: 1.6rem 1.6rem 0 0;
+  }
+  .main .layout .container .content .card .group-item .group-title .title {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+  .main .layout .container .content .card .group-item .group-title .title span {
+    font-size: 3.2rem;
+    font-family: Oswald;
+    font-weight: 500;
+    text-align: center;
+    color: #F67600;
+    line-height: 1;
+  }
+  .main .layout .container .content .card .group-item .group-title .title .pc {
+    display: none;
+  }
+  .main .layout .container .content .card .group-item .group-title .title .sp {
+    display: inline;
+  }
+  .main .layout .container .content .card .group-item .group-title .icon {
+    transition: transform 0.3s ease;
+  }
+  .main .layout .container .content .card .group-item .group-title .icon img {
+    transition: transform 0.3s ease;
+  }
+  .main .layout .container .content .card .group-item .group-title.active .icon img {
+    transform: rotate(180deg);
+  }
+  .main .layout .container .content .card .group-item .above {
+    width: 100%;
+    padding: 2rem 2.4rem 3.2rem 2.4rem;
+    border-bottom-right-radius: 1.6rem;
+    border-bottom-left-radius: 1.6rem;
+    border-right: 0.4rem solid #FDE3CC;
+    border-bottom: 0.4rem solid #FDE3CC;
+    border-left: 0.4rem solid #FDE3CC;
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+  .main .layout .container .content .card .group-item .above.open {
+    max-height: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .main .layout .container .content .card .group-item .above-main {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left {
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .sp {
+    display: inline;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left span {
+    color: #F67600;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8;
+    letter-spacing: 0.048rem;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .description {
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.8;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .description p {
+    font-size: 1.5rem;
+    letter-spacing: 0.048rem;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .description .sp {
+    display: inline;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .description br {
+    display: none;
+  }
+  .main .layout .container .content .card .group-item .above-main .left .group-left .button {
+    display: none;
+  }
+  .main .layout .container .content .card .group-item .above-main .right {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main .layout .container .content .card .group-item .above-main .right img {
+    max-width: 38rem;
+  }
+  .main .layout .container .content .card .group-item .above-main .right .button {
+    padding: 1.6rem 2rem 1.6rem 2.4rem;
+    display: flex;
+    gap: 0.4rem;
+    border: 0.2rem solid #000000;
+    border-radius: 9.9rem;
+    margin: 0 auto;
+  }
+  .main .layout .container .content .card .group-item .above-main .right .button span {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #000000;
+    line-height: 1.5;
+    letter-spacing: 0.054rem;
+  }
+}/*# sourceMappingURL=second.css.map */
